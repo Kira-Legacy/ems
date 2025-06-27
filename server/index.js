@@ -4,11 +4,9 @@ import cors from "cors";
 import authRouter from './routes/auth.js';
 import connectToDatabase from "./db/connection.js";
 
-connectToDatabase()
-
-const app = express()
-
 config();
+connectToDatabase()
+const app = express()
 
 app.use(cors())
 app.use(express.json())
