@@ -1,7 +1,6 @@
 import express from "express";
 import { login, verify } from "../controllers/authController.js"
 import authMiddleware from "../middleware/authMiddleware.js"
-import { verify } from "jsonwebtoken";
 
 const router = express.Router()
 

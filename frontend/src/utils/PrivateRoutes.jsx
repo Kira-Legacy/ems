@@ -1,9 +1,9 @@
 import React from "react";
-import { useAuth } from "../context/authContext";
+import { UserAuth } from "../context/authContext";
 import { Navigate } from "react-router-dom";
 
 const PrivateRoutes = ({children}) => {
-    const {user, loading} = useAuth()
+    const {user, loading} = UserAuth()
 
     if(loading) {
         <div>loading ...</div>
